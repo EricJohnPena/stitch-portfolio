@@ -132,139 +132,342 @@
   </section>
 
   <!-- Projects Section -->
-  <section aria-labelledby="projects-section-title" class="bg-[#d2e2e2] py-20 lg:py-28" data-purpose="projects-grid" id="projects">
-    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-      <div class="flex justify-center mb-16">
-        <h2 class="inline-block px-8 py-1.5 bg-[#a3c7cf] text-[#1c4e61] text-xs font-bold tracking-widest uppercase rounded-full shadow-sm" id="projects-section-title">
-          PROJECTS
-        </h2>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-          <div class="h-48 w-full bg-[#fdeecb] relative overflow-hidden flex items-center justify-center p-4">
-            <div class="w-full h-full flex flex-col items-center justify-center relative">
-              <div class="w-36 h-24 bg-white rounded-md border-2 border-slate-300 shadow-sm relative p-2 flex flex-col">
-                <div class="h-5 bg-amber-400 rounded-t-sm flex items-center px-2 space-x-1">
-                  <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
-                  <span class="w-1.5 h-1.5 rounded-full bg-yellow-200"></span>
-                  <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
-                </div>
-                <div class="flex-1 flex items-center justify-around py-1">
-                  <i class="fa-solid fa-store text-emerald-600 text-2xl" aria-hidden="true"></i>
-                  <div class="space-y-1">
-                    <div class="w-12 h-2 bg-slate-200 rounded"></div>
-                    <div class="w-8 h-2 bg-slate-200 rounded"></div>
+    <section aria-labelledby="projects-section-title" class="bg-[#d2e2e2] py-20 lg:py-28" data-purpose="projects-grid" id="projects">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+        <div class="flex justify-center mb-16">
+          <h2 class="inline-block px-8 py-1.5 bg-[#a3c7cf] text-[#1c4e61] text-xs font-bold tracking-widest uppercase rounded-full shadow-sm" id="projects-section-title">
+            PROJECTS
+          </h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1: E-Commerce API Documentation -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#fdeecb] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="w-full h-full flex flex-col items-center justify-center relative">
+                <div class="w-36 h-24 bg-white rounded-md border-2 border-slate-300 shadow-sm relative p-2 flex flex-col">
+                  <div class="h-5 bg-amber-400 rounded-t-sm flex items-center px-2 space-x-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-yellow-200"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                  </div>
+                  <div class="flex-1 flex items-center justify-around py-1">
+                    <i class="fa-solid fa-store text-emerald-600 text-2xl" aria-hidden="true"></i>
+                    <div class="space-y-1">
+                      <div class="w-12 h-2 bg-slate-200 rounded"></div>
+                      <div class="w-8 h-2 bg-slate-200 rounded"></div>
+                    </div>
                   </div>
                 </div>
+                <div class="absolute -bottom-2 -left-2 bg-rose-500 text-white rounded p-1 text-[10px] font-bold shadow">REST API</div>
+                <div class="absolute top-2 right-4 bg-orange-400 text-white text-[10px] px-2 py-0.5 rounded font-mono font-bold">200 OK</div>
               </div>
-              <div class="absolute -bottom-2 -left-2 bg-rose-500 text-white rounded p-1 text-[10px] font-bold shadow">REST API</div>
-              <div class="absolute top-2 right-4 bg-orange-400 text-white text-[10px] px-2 py-0.5 rounded font-mono font-bold">200 OK</div>
             </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-[#234a58]">E-Commerce API Documentation</h3>
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">API Docs</span>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">E-Commerce API Documentation</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">API Docs</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.
+                </p>
               </div>
-              <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
-                Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. 
-              </p>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>REST API • Postman</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
             </div>
-            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
-              <span>REST API • Postman</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Card 2 -->
-        <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-          <div class="h-48 w-full bg-[#e8f1f5] relative overflow-hidden flex items-center justify-center p-4">
-            <div class="w-full h-full flex items-center justify-center relative">
-              <div class="w-40 h-28 bg-white rounded-lg shadow-sm border border-slate-200 p-3 flex flex-col justify-between">
-                <div class="flex items-center justify-between border-b pb-1">
-                  <span class="text-[11px] font-bold text-slate-700">Student Portal</span>
-                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                </div>
-                <div class="space-y-1.5 py-1">
-                  <div class="flex items-center gap-1.5">
-                    <i class="fa-solid fa-graduation-cap text-sky-600 text-xs" aria-hidden="true"></i>
-                    <div class="h-2 w-20 bg-slate-200 rounded"></div>
+          <!-- Card 2: Course Booking API Documentation -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#e8f1f5] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="w-full h-full flex items-center justify-center relative">
+                <div class="w-40 h-28 bg-white rounded-lg shadow-sm border border-slate-200 p-3 flex flex-col justify-between">
+                  <div class="flex items-center justify-between border-b pb-1">
+                    <span class="text-[11px] font-bold text-slate-700">Student Portal</span>
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   </div>
-                  <div class="flex items-center gap-1.5">
-                    <i class="fa-solid fa-calendar-check text-indigo-500 text-xs" aria-hidden="true"></i>
-                    <div class="h-2 w-16 bg-slate-200 rounded"></div>
+                  <div class="space-y-1.5 py-1">
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-graduation-cap text-sky-600 text-xs" aria-hidden="true"></i>
+                      <div class="h-2 w-20 bg-slate-200 rounded"></div>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-calendar-check text-indigo-500 text-xs" aria-hidden="true"></i>
+                      <div class="h-2 w-16 bg-slate-200 rounded"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="h-4 bg-sky-100 rounded text-[9px] text-sky-700 flex items-center justify-center font-semibold">
-                  GET /api/courses
+                  <div class="h-4 bg-sky-100 rounded text-[9px] text-sky-700 flex items-center justify-center font-semibold">
+                    GET /api/courses
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-[#234a58]">Course Booking API Documentation</h3>
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">API Docs</span>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">Course Booking API Documentation</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">API Docs</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.
+                </p>
               </div>
-              <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
-                RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details.
-              </p>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>REST API • Postman</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
             </div>
-            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
-              <span>REST API • Postman</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Card 3 -->
-        <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-          <div class="h-48 w-full bg-[#dbeaf0] relative overflow-hidden flex items-center justify-center p-4">
-            <div class="flex items-center gap-3">
-              <div class="w-24 h-36 bg-slate-800 rounded-xl p-1.5 border-2 border-slate-700 shadow-md flex flex-col">
-                <div class="w-8 h-1 bg-slate-600 rounded-full mx-auto mb-1"></div>
-                <div class="bg-sky-500 flex-1 rounded p-1 flex flex-col justify-between">
-                  <span class="text-[8px] text-white font-bold">Active Courses</span>
-                  <div class="space-y-1">
-                    <div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Web Dev 101</div>
-                    <div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Node.js API</div>
+          <!-- Card 3: Course Booking App -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#dbeaf0] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-24 h-36 bg-slate-800 rounded-xl p-1.5 border-2 border-slate-700 shadow-md flex flex-col">
+                  <div class="w-8 h-1 bg-slate-600 rounded-full mx-auto mb-1"></div>
+                  <div class="bg-sky-500 flex-1 rounded p-1 flex flex-col justify-between">
+                    <span class="text-[8px] text-white font-bold">Active Courses</span>
+                    <div class="space-y-1">
+                      <div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Web Dev 101</div>
+                      <div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Node.js API</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
+                    <i class="fa-solid fa-user-graduate text-sky-600" aria-hidden="true"></i> Profile System
+                  </div>
+                  <div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
+                    <i class="fa-solid fa-circle-check text-emerald-500" aria-hidden="true"></i> One-click Enroll
                   </div>
                 </div>
               </div>
-              <div class="space-y-2">
-                <div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
-                  <i class="fa-solid fa-user-graduate text-sky-600" aria-hidden="true"></i> Profile System
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">Course Booking App</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">Full Stack</span>
                 </div>
-                <div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
-                  <i class="fa-solid fa-circle-check text-emerald-500" aria-hidden="true"></i> One-click Enroll
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.
+                </p>
+              </div>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>MERN Stack</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: E-Commerce App -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#d0e5ee] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="w-full flex items-center justify-center gap-4">
+                <div class="w-20 h-32 bg-slate-900 rounded-lg p-1 shadow flex flex-col">
+                  <div class="h-2 bg-slate-800 rounded-full mb-1"></div>
+                  <div class="bg-white flex-1 rounded p-1 flex flex-col justify-between">
+                    <div class="text-[7px] font-bold text-slate-800">Products</div>
+                    <div class="grid grid-cols-2 gap-0.5">
+                      <div class="h-6 bg-slate-100 rounded"></div>
+                      <div class="h-6 bg-slate-100 rounded"></div>
+                    </div>
+                    <div class="h-3 bg-emerald-500 rounded text-[6px] text-white flex items-center justify-center">Buy</div>
+                  </div>
+                </div>
+                <div class="w-36 h-28 bg-white rounded border border-slate-200 shadow p-2 flex flex-col justify-between">
+                  <div class="flex justify-between items-center text-[9px] font-bold text-slate-700">
+                    <span>Admin Dashboard</span>
+                    <span class="text-emerald-600">+24%</span>
+                  </div>
+                  <div class="h-8 bg-sky-50 rounded flex items-end px-1 gap-1 pb-1">
+                    <div class="w-2 bg-sky-400 h-3 rounded-t"></div>
+                    <div class="w-2 bg-sky-400 h-5 rounded-t"></div>
+                    <div class="w-2 bg-sky-500 h-7 rounded-t"></div>
+                    <div class="w-2 bg-sky-600 h-6 rounded-t"></div>
+                    <div class="w-2 bg-sky-700 h-8 rounded-t"></div>
+                  </div>
+                  <div class="text-[8px] text-slate-400">Inventory &amp; Cart Synced</div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-[#234a58]">Course Booking App</h3>
-                <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">Full Stack</span>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">E-Commerce App</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">E-Commerce</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.
+                </p>
               </div>
-              <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
-                A MERN-stack course enrollment system featuring user registration, authentication, and profile management.
-              </p>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>MERN Stack</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
             </div>
-            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
-              <span>MERN Stack</span>
-              <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+          </article>
+
+          <!-- Card 5: Airline Booking System -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#1b647b] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="text-center text-white space-y-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full backdrop-blur-sm text-xs font-semibold">
+                  <i class="fa-solid fa-plane-departure text-sky-200" aria-hidden="true"></i> Airline Tickets Online
+                </div>
+                <div class="w-48 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm border border-white/20 space-y-1.5">
+                  <div class="flex justify-between text-[11px]">
+                    <span class="font-bold">MNL</span>
+                    <i class="fa-solid fa-plane text-xs text-sky-300" aria-hidden="true"></i>
+                    <span class="font-bold">HND</span>
+                  </div>
+                  <div class="h-1 bg-white/30 rounded"></div>
+                  <div class="text-[9px] text-sky-200">Seat Selection • Fast Checkout</div>
+                </div>
+              </div>
             </div>
-          </div>
-        </article>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">Airline Booking System</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">UI Mockup</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.
+                </p>
+              </div>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>Figma • UI/UX</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Airline Booking Prototype -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#f4ece1] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="w-full flex items-center justify-center gap-3">
+                <div class="w-44 bg-white rounded-lg p-3 shadow-md border border-slate-200 space-y-2">
+                  <div class="text-[11px] font-bold text-slate-800 flex justify-between">
+                    <span>Flight Pass</span>
+                    <span class="text-sky-600 font-mono">B-777</span>
+                  </div>
+                  <div class="flex items-center justify-between bg-slate-50 p-1.5 rounded">
+                    <div class="text-[10px] font-bold text-slate-700">GATE 12</div>
+                    <div class="text-[10px] font-bold text-sky-700">SEAT 14A</div>
+                  </div>
+                  <div class="h-4 bg-slate-900 rounded text-white text-[8px] flex items-center justify-center font-bold tracking-widest">
+                    BARCODE CONFIRMED
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">Airline Booking Prototype</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">Prototype</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.
+                </p>
+              </div>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>Figma • Interactive</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Short Courses Capstone 1 -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#cae5f0] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="flex items-center gap-3 text-slate-600">
+                <i class="fa-solid fa-code text-4xl text-[#3e758a]" aria-hidden="true"></i>
+                <div class="space-y-1 font-mono text-xs">
+                  <div class="bg-white/80 px-2 py-0.5 rounded shadow-sm">npm run build</div>
+                  <div class="bg-white/80 px-2 py-0.5 rounded shadow-sm text-emerald-600">compiled: 100%</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">Short Courses Capstone 1</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">Capstone</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  Placeholder for your short courses capstone project.
+                </p>
+              </div>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>Technology Stack</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Short Courses Capstone 2 -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#f6dfce] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="w-48 bg-white rounded shadow-md p-3 border border-amber-200 flex flex-col items-center space-y-2">
+                <i class="fa-solid fa-laptop-code text-3xl text-amber-700" aria-hidden="true"></i>
+                <span class="text-xs font-bold text-slate-700">E-Commerce Architecture</span>
+                <span class="text-[10px] text-slate-400">Microservices Ready</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">Short Courses Capstone 2</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">Capstone</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  Placeholder for your short courses capstone project.
+                </p>
+              </div>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>Technology Stack</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9: Short Courses Capstone 3 -->
+          <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+            <div class="h-48 w-full bg-[#d0e5ee] relative overflow-hidden flex items-center justify-center p-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow text-sky-600 text-xl font-bold">
+                  <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+                </div>
+                <div class="space-y-1">
+                  <div class="w-24 h-2.5 bg-sky-200 rounded"></div>
+                  <div class="w-16 h-2 bg-sky-300 rounded"></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-[#234a58]">Short Courses Capstone 3</h3>
+                  <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">Capstone</span>
+                </div>
+                <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                  Placeholder for your short courses capstone project.
+                </p>
+              </div>
+              <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+                <span>Technology Stack</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- Tools Section -->
   <section aria-labelledby="tools-section-title" class="bg-[#f4eee6] py-20 lg:py-24" data-purpose="tools-tech-stack" id="tools">
