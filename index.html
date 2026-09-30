@@ -1,25 +1,31 @@
 <!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Eric John Peña | Full Stack Web Developer</title>
+  
+  
+  <meta name="description" content="Portfolio of Eric John Peña, a Full Stack Web Developer specializing in MERN stack, API development, and responsive design."/>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Eric John Peña | Full Stack Web Developer</title>
-<!-- Google Fonts: Inter -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- Font Awesome Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<!-- Tailwind CSS CDN with plugins -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN with plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             brand: {
-              teal: '#5b92a5',
-              darkteal: '#2c698d',
+              teal: '#3a6f81', /* Darkened for WCAG color contrast compliance */
+              darkteal: '#234a58',
               deepnavy: '#19455d',
               lightslate: '#547b8c',
               bgHero: '#f4ede4',
@@ -27,7 +33,7 @@
               bgTools: '#ede7de',
               bgContact: '#f7f4ee',
               bgContactSide: '#c8dddd',
-              footer: '#5b91a7',
+              footer: '#3a6f81',
               pill: '#97bfca',
             }
           },
@@ -39,626 +45,420 @@
       }
     }
   </script>
-<!-- BEGIN: Custom Styles -->
-<style data-purpose="base-styling">
+  
+  <style data-purpose="base-styling">
     body {
       font-family: 'Inter', sans-serif;
       color: #2c444e;
       background-color: #f5eee5;
       -webkit-font-smoothing: antialiased;
     }
-    
     ::selection {
-      background-color: #5b92a5;
+      background-color: #3a6f81;
       color: #ffffff;
     }
-
     .project-card {
       transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    
     .project-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 16px 30px -10px rgba(44, 105, 141, 0.18);
     }
   </style>
-<!-- END: Custom Styles -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body class="min-h-screen flex flex-col antialiased selection:bg-brand-teal selection:text-white" id="top">
-<!-- BEGIN: MainHeader -->
+
 <header class="sticky top-0 z-50 bg-[#f4ede4]/90 backdrop-blur-md transition-colors duration-200" data-purpose="site-navigation">
-<div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 h-24 flex items-center justify-between">
-<!-- Monogram Logo badge -->
-<a aria-label="Eric John Peña - Home" class="group flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-brand-darkteal focus:ring-offset-2 rounded-lg" href="#top">
-<div class="w-12 h-12 rounded-lg bg-[#5b92a5] flex items-center justify-center text-white font-bold text-lg tracking-wider shadow-sm transition-transform group-hover:scale-105">
-          EJ
-        </div>
-</a>
-<!-- Desktop Navigation Links -->
-<nav aria-label="Main Navigation" class="flex items-center gap-8 md:gap-10">
-<a class="text-sm font-medium text-[#486b7a] hover:text-[#1c5270] transition-colors focus:outline-none focus:underline" href="#projects">Projects</a>
-<a class="text-sm font-medium text-[#486b7a] hover:text-[#1c5270] transition-colors focus:outline-none focus:underline" href="#tools">Tools</a>
-<a class="text-sm font-medium text-[#486b7a] hover:text-[#1c5270] transition-colors focus:outline-none focus:underline" href="#contact">Contact</a>
-<a class="inline-flex items-center justify-center px-6 py-2 text-xs font-semibold uppercase tracking-wider text-[#407388] border border-[#5b92a5] rounded-full hover:bg-[#5b92a5] hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-darkteal focus:ring-offset-1" href="#contact">
-          GET IN TOUCH
-        </a>
-</nav>
-</div>
-</header>
-<!-- END: MainHeader -->
-<main class="flex-grow">
-<!-- BEGIN: HeroSection -->
-<section aria-labelledby="hero-title" class="bg-[#f4ede4] pt-12 pb-24 md:pt-20 md:pb-32" data-purpose="hero-presentation">
-<div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-<div class="max-w-3xl space-y-6">
-<h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#508ca4] tracking-tight font-display" id="hero-title">
-            ERIC JOHN PEÑA
-          </h1>
-<h2 class="text-2xl sm:text-3xl font-bold text-[#558da2]">
-            Full Stack Web Developer
-          </h2>
-<p class="text-base sm:text-lg text-[#5a7f90] leading-relaxed max-w-2xl font-normal pt-2">
-            I'm a Computer Science graduate with an interest in software development, and web technologies. I enjoy building practical applications and continuously learning new technologies to expand my skills.
-          </p>
-<!-- Call to action buttons -->
-<div class="pt-6 flex flex-wrap gap-4 items-center" data-purpose="hero-actions">
-<a class="px-7 py-3 bg-[#5b92a5] hover:bg-[#487a8c] text-white text-sm font-semibold rounded-md shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5b92a5]" href="#projects">
-              Explore Projects
-            </a>
-<a class="px-7 py-3 bg-transparent border border-[#5b92a5] hover:bg-[#5b92a5]/10 text-[#407388] text-sm font-semibold rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5b92a5]" href="#contact">
-              Let's Connect
-            </a>
-</div>
-</div>
-</div>
-</section>
-<!-- END: HeroSection -->
-<!-- BEGIN: ProjectsSection -->
-<section aria-labelledby="projects-section-title" class="bg-[#d2e2e2] py-20 lg:py-28" data-purpose="projects-grid" id="projects">
-<div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-<!-- Section Header Badge -->
-<div class="flex justify-center mb-16">
-<span class="inline-block px-8 py-1.5 bg-[#a3c7cf] text-[#245266] text-xs font-bold tracking-widest uppercase rounded-full shadow-sm" id="projects-section-title">
-            PROJECTS
-          </span>
-</div>
-<!-- 3x3 Project Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Card 1: E-Commerce API Documentation -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#fdeecb] relative overflow-hidden flex items-center justify-center p-4">
-<!-- Visual Mockup Canvas/SVG for E-Commerce API -->
-<div class="w-full h-full flex flex-col items-center justify-center relative">
-<div class="w-36 h-24 bg-white rounded-md border-2 border-slate-300 shadow-sm relative p-2 flex flex-col">
-<div class="h-5 bg-amber-400 rounded-t-sm flex items-center px-2 space-x-1">
-<span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
-<span class="w-1.5 h-1.5 rounded-full bg-yellow-200"></span>
-<span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
-</div>
-<div class="flex-1 flex items-center justify-around py-1">
-<i class="fa-solid fa-store text-emerald-600 text-2xl"></i>
-<div class="space-y-1">
-<div class="w-12 h-2 bg-slate-200 rounded"></div>
-<div class="w-8 h-2 bg-slate-200 rounded"></div>
-</div>
-</div>
-</div>
-<div class="absolute -bottom-2 -left-2 bg-rose-500 text-white rounded p-1 text-[10px] font-bold shadow">REST API</div>
-<div class="absolute top-2 right-4 bg-orange-400 text-white text-[10px] px-2 py-0.5 rounded font-mono font-bold">200 OK</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">E-Commerce API Documentation</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">API Docs</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>REST API • Postman</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 2: Course Booking API Documentation -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#e8f1f5] relative overflow-hidden flex items-center justify-center p-4">
-<div class="w-full h-full flex items-center justify-center relative">
-<div class="w-40 h-28 bg-white rounded-lg shadow-sm border border-slate-200 p-3 flex flex-col justify-between">
-<div class="flex items-center justify-between border-b pb-1">
-<span class="text-[11px] font-bold text-slate-700">Student Portal</span>
-<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-</div>
-<div class="space-y-1.5 py-1">
-<div class="flex items-center gap-1.5">
-<i class="fa-solid fa-graduation-cap text-sky-600 text-xs"></i>
-<div class="h-2 w-20 bg-slate-200 rounded"></div>
-</div>
-<div class="flex items-center gap-1.5">
-<i class="fa-solid fa-calendar-check text-indigo-500 text-xs"></i>
-<div class="h-2 w-16 bg-slate-200 rounded"></div>
-</div>
-</div>
-<div class="h-4 bg-sky-100 rounded text-[9px] text-sky-700 flex items-center justify-center font-semibold">
-                    GET /api/courses
-                  </div>
-</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">Course Booking API Documentation</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">API Docs</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>REST API • Postman</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 3: Course Booking App -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#dbeaf0] relative overflow-hidden flex items-center justify-center p-4">
-<div class="flex items-center gap-3">
-<div class="w-24 h-36 bg-slate-800 rounded-xl p-1.5 border-2 border-slate-700 shadow-md flex flex-col">
-<div class="w-8 h-1 bg-slate-600 rounded-full mx-auto mb-1"></div>
-<div class="bg-sky-500 flex-1 rounded p-1 flex flex-col justify-between">
-<span class="text-[8px] text-white font-bold">Active Courses</span>
-<div class="space-y-1">
-<div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Web Dev 101</div>
-<div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Node.js API</div>
-</div>
-</div>
-</div>
-<div class="space-y-2">
-<div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
-<i class="fa-solid fa-user-graduate text-sky-600"></i> Profile System
-                  </div>
-<div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
-<i class="fa-solid fa-circle-check text-emerald-500"></i> One-click Enroll
-                  </div>
-</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">Course Booking App</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">Full Stack</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>MERN Stack</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 4: E-Commerce App -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#d0e5ee] relative overflow-hidden flex items-center justify-center p-4">
-<div class="w-full flex items-center justify-center gap-4">
-<div class="w-20 h-32 bg-slate-900 rounded-lg p-1 shadow flex flex-col">
-<div class="h-2 bg-slate-800 rounded-full mb-1"></div>
-<div class="bg-white flex-1 rounded p-1 flex flex-col justify-between">
-<div class="text-[7px] font-bold text-slate-800">Products</div>
-<div class="grid grid-cols-2 gap-0.5">
-<div class="h-6 bg-slate-100 rounded"></div>
-<div class="h-6 bg-slate-100 rounded"></div>
-</div>
-<div class="h-3 bg-emerald-500 rounded text-[6px] text-white flex items-center justify-center">Buy</div>
-</div>
-</div>
-<div class="w-36 h-28 bg-white rounded border border-slate-200 shadow p-2 flex flex-col justify-between">
-<div class="flex justify-between items-center text-[9px] font-bold text-slate-700">
-<span>Admin Dashboard</span>
-<span class="text-emerald-600">+24%</span>
-</div>
-<div class="h-8 bg-sky-50 rounded flex items-end px-1 gap-1 pb-1">
-<div class="w-2 bg-sky-400 h-3 rounded-t"></div>
-<div class="w-2 bg-sky-400 h-5 rounded-t"></div>
-<div class="w-2 bg-sky-500 h-7 rounded-t"></div>
-<div class="w-2 bg-sky-600 h-6 rounded-t"></div>
-<div class="w-2 bg-sky-700 h-8 rounded-t"></div>
-</div>
-<div class="text-[8px] text-slate-400">Inventory &amp; Cart Synced</div>
-</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">E-Commerce App</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">E-Commerce</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>MERN Stack</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 5: Airline Booking System -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#1b647b] relative overflow-hidden flex items-center justify-center p-4">
-<div class="text-center text-white space-y-2">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full backdrop-blur-sm text-xs font-semibold">
-<i class="fa-solid fa-plane-departure text-sky-200"></i> Airline Tickets Online
-                </div>
-<div class="w-48 bg-white/10 rounded-lg p-2.5 backdrop-blur-sm border border-white/20 space-y-1.5">
-<div class="flex justify-between text-[11px]">
-<span class="font-bold">MNL</span>
-<i class="fa-solid fa-plane text-xs text-sky-300"></i>
-<span class="font-bold">HND</span>
-</div>
-<div class="h-1 bg-white/30 rounded"></div>
-<div class="text-[9px] text-sky-200">Seat Selection • Fast Checkout</div>
-</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">Airline Booking System</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">UI Mockup</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>Figma • UI/UX</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 6: Airline Booking Prototype -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#f4ece1] relative overflow-hidden flex items-center justify-center p-4">
-<div class="w-full flex items-center justify-center gap-3">
-<div class="w-44 bg-white rounded-lg p-3 shadow-md border border-slate-200 space-y-2">
-<div class="text-[11px] font-bold text-slate-800 flex justify-between">
-<span>Flight Pass</span>
-<span class="text-sky-600 font-mono">B-777</span>
-</div>
-<div class="flex items-center justify-between bg-slate-50 p-1.5 rounded">
-<div class="text-[10px] font-bold text-slate-700">GATE 12</div>
-<div class="text-[10px] font-bold text-sky-700">SEAT 14A</div>
-</div>
-<div class="h-4 bg-slate-900 rounded text-white text-[8px] flex items-center justify-center font-bold tracking-widest">
-                    BARCODE CONFIRMED
-                  </div>
-</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">Airline Booking Prototype</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">Prototype</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>Figma • Interactive</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 7: Short Courses Capstone 1 -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#cae5f0] relative overflow-hidden flex items-center justify-center p-4">
-<div class="flex items-center gap-3 text-slate-600">
-<i class="fa-solid fa-code text-4xl text-[#3e758a]"></i>
-<div class="space-y-1 font-mono text-xs">
-<div class="bg-white/80 px-2 py-0.5 rounded shadow-sm">npm run build</div>
-<div class="bg-white/80 px-2 py-0.5 rounded shadow-sm text-emerald-600">compiled: 100%</div>
-</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">Short Courses Capstone 1</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">Capstone</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  Placeholder for your short courses capstone project.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>Technology Stack</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 8: Short Courses Capstone 2 -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#f6dfce] relative overflow-hidden flex items-center justify-center p-4">
-<div class="w-48 bg-white rounded shadow-md p-3 border border-amber-200 flex flex-col items-center space-y-2">
-<i class="fa-solid fa-laptop-code text-3xl text-amber-700"></i>
-<span class="text-xs font-bold text-slate-700">E-Commerce Architecture</span>
-<span class="text-[10px] text-slate-400">Microservices Ready</span>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">Short Courses Capstone 2</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">Capstone</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  Placeholder for your short courses capstone project.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>Technology Stack</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-<!-- Card 9: Short Courses Capstone 3 -->
-<article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
-<div class="h-48 w-full bg-[#d0e5ee] relative overflow-hidden flex items-center justify-center p-4">
-<div class="flex items-center gap-3">
-<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow text-sky-600 text-xl font-bold">
-<i class="fa-solid fa-cubes"></i>
-</div>
-<div class="space-y-1">
-<div class="w-24 h-2.5 bg-sky-200 rounded"></div>
-<div class="w-16 h-2 bg-sky-300 rounded"></div>
-</div>
-</div>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex items-start justify-between gap-2 mb-2">
-<h3 class="text-base font-bold text-[#356679]">Short Courses Capstone 3</h3>
-<span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#1c4e61] shrink-0">Capstone</span>
-</div>
-<p class="text-xs text-[#527788] leading-relaxed line-clamp-5">
-                  Placeholder for your short courses capstone project.
-                </p>
-</div>
-<div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#638797] font-medium">
-<span>Technology Stack</span>
-<i class="fa-solid fa-arrow-up-right-from-square text-[#86a9b9]"></i>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-<!-- END: ProjectsSection -->
-<!-- BEGIN: ToolsSection -->
-<section aria-labelledby="tools-section-title" class="bg-[#f4eee6] py-20 lg:py-24" data-purpose="tools-tech-stack" id="tools">
-<div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-<!-- Section Header Badge -->
-<div class="flex justify-center mb-16">
-<span class="inline-block px-8 py-1.5 bg-[#bdd7dc] text-[#245266] text-xs font-bold tracking-widest uppercase rounded-full shadow-sm" id="tools-section-title">
-            TOOLS
-          </span>
-</div>
-<!-- Tech Icons 4x2 Grid -->
-<div class="grid grid-cols-2 sm:grid-cols-4 gap-y-12 gap-x-8 max-w-4xl mx-auto">
-<!-- Tool: Figma -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-figma text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">Figma</span>
-</div>
-<!-- Tool: Bootstrap -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-bootstrap text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">Bootstrap</span>
-</div>
-<!-- Tool: HTML -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-html5 text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">HTML</span>
-</div>
-<!-- Tool: CSS -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-css3-alt text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">CSS</span>
-</div>
-<!-- Tool: Java -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-java text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">Java</span>
-</div>
-<!-- Tool: Node.js -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-node-js text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">Node.js</span>
-</div>
-<!-- Tool: Python -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-python text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">Python</span>
-</div>
-<!-- Tool: Git -->
-<div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
-<div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
-<i class="fa-brands fa-git-alt text-2xl"></i>
-</div>
-<span class="mt-3 text-xs font-medium text-[#4f707f]">Git</span>
-</div>
-</div>
-</div>
-</section>
-<!-- END: ToolsSection -->
-<!-- BEGIN: ContactSection -->
-<section aria-labelledby="contact-section-title" class="border-t border-[#d8e5e7]" data-purpose="contact-and-inquiry" id="contact">
-<div class="grid grid-cols-1 lg:grid-cols-2">
-<!-- Left Side: Send a Message Form -->
-<div class="bg-[#f5ede4] py-16 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 flex flex-col justify-center">
-<div class="max-w-xl mx-auto w-full">
-<h2 class="text-2xl sm:text-3xl font-bold text-[#457e93] mb-2" id="contact-section-title">
-              Send a Message
-            </h2>
-<p class="text-xs sm:text-sm text-[#5d8393] mb-8">
-              Have an idea or project? Let's talk about building something great.
-            </p>
-<form class="space-y-6" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.reset();">
-<!-- Name Input -->
-<div>
-<label class="block text-[11px] font-bold uppercase tracking-wider text-[#4d7383] mb-2" for="userName">
-                  YOUR NAME
-                </label>
-<input class="w-full px-4 py-3 bg-[#b9d5d8]/70 border-0 rounded text-slate-800 placeholder-[#6e969d] focus:ring-2 focus:ring-[#5b92a5] focus:bg-[#b9d5d8] text-sm" id="userName" name="name" placeholder="Jane Doe" required="" type="text"/>
-</div>
-<!-- Email Input -->
-<div>
-<label class="block text-[11px] font-bold uppercase tracking-wider text-[#4d7383] mb-2" for="userEmail">
-                  EMAIL ADDRESS
-                </label>
-<input class="w-full px-4 py-3 bg-[#b9d5d8]/70 border-0 rounded text-slate-800 placeholder-[#6e969d] focus:ring-2 focus:ring-[#5b92a5] focus:bg-[#b9d5d8] text-sm" id="userEmail" name="email" placeholder="jane@example.com" required="" type="email"/>
-</div>
-<!-- Project Details Textarea -->
-<div>
-<label class="block text-[11px] font-bold uppercase tracking-wider text-[#4d7383] mb-2" for="projectDetails">
-                  PROJECT DETAILS
-                </label>
-<textarea class="w-full px-4 py-3 bg-[#b9d5d8]/70 border-0 rounded text-slate-800 placeholder-[#6e969d] focus:ring-2 focus:ring-[#5b92a5] focus:bg-[#b9d5d8] text-sm resize-none" id="projectDetails" name="details" placeholder="Tell me about your goals, timelines, and scope..." required="" rows="4"></textarea>
-</div>
-<!-- Submit Button -->
-<div>
-<button class="px-8 py-3 bg-[#5b92a5] hover:bg-[#487a8c] text-white text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5b92a5]" type="submit">
-                  SEND MESSAGE
-                </button>
-</div>
-<!-- Interactive Success Notification -->
-<div class="hidden p-4 rounded bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs" id="formSuccess">
-                Thank you! Your message has been received. I'll get back to you shortly.
-              </div>
-</form>
-</div>
-</div>
-<!-- Right Side: Get in Touch Cards -->
-<div class="bg-[#c2dada] py-16 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 flex flex-col justify-center">
-<div class="max-w-xl mx-auto w-full space-y-6">
-<div>
-<span class="text-[11px] font-bold uppercase tracking-widest text-[#416f81]">CONTACT</span>
-<h3 class="text-2xl sm:text-3xl font-bold text-[#356b7f] mt-1">Get in Touch</h3>
-<p class="text-xs sm:text-sm text-[#487283] mt-2">
-                Available for freelance contracts, design leadership, and full-time inquiries.
-              </p>
-</div>
-<!-- Contact Information Cards (2x2 Grid) -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-<!-- Card: Email -->
-<a class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm hover:shadow transition-shadow group" href="mailto:eric.john.pena@gmail.com">
-<div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] group-hover:scale-105 transition-transform">
-<i class="fa-solid fa-envelope text-sm"></i>
-</div>
-<div class="overflow-hidden">
-<span class="text-[9px] uppercase tracking-wider text-[#638797] font-bold block">EMAIL</span>
-<span class="text-xs font-bold text-[#335665] truncate block">eric.john.pena@gmail.com</span>
-</div>
-</a>
-<!-- Card: Location -->
-<div class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm">
-<div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f]">
-<i class="fa-solid fa-location-dot text-sm"></i>
-</div>
-<div>
-<span class="text-[9px] uppercase tracking-wider text-[#638797] font-bold block">LOCATION</span>
-<span class="text-xs font-bold text-[#335665] block">Cavite, Philippines</span>
-</div>
-</div>
-<!-- Card: GitHub -->
-<a class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm hover:shadow transition-shadow group" href="https://github.com/EricJohnPena" rel="noopener noreferrer" target="_blank">
-<div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] group-hover:scale-105 transition-transform">
-<i class="fa-brands fa-github text-base"></i>
-</div>
-<div class="overflow-hidden">
-<span class="text-[9px] uppercase tracking-wider text-[#638797] font-bold block">GITHUB</span>
-<span class="text-xs font-bold text-[#335665] truncate block">github.com/EricJohnPena</span>
-</div>
-</a>
-<!-- Card: Network -->
-<a class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm hover:shadow transition-shadow group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-<div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#376b7f] group-hover:scale-105 transition-transform">
-<i class="fa-brands fa-linkedin-in text-sm"></i>
-</div>
-<div class="overflow-hidden">
-<span class="text-[9px] uppercase tracking-wider text-[#638797] font-bold block">NETWORK</span>
-<span class="text-xs font-bold text-[#335665] truncate block">linkedin.com</span>
-</div>
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: ContactSection -->
-</main>
-<!-- BEGIN: SiteFooter -->
-<footer class="bg-[#5990a4] text-white py-6" data-purpose="site-footer">
-<div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-white/90">
-<!-- Copyright Note -->
-<div>
-        © 2026 Eric John Peña. All rights reserved.
+  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 h-24 flex items-center justify-between">
+    <a aria-label="Eric John Peña - Home" class="group flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-brand-darkteal focus:ring-offset-2 rounded-lg" href="#top">
+      <div class="w-12 h-12 rounded-lg bg-[#3a6f81] flex items-center justify-center text-white font-bold text-lg tracking-wider shadow-sm transition-transform group-hover:scale-105">
+        E
       </div>
-<!-- Quick Links & Back to top -->
-<div class="flex items-center gap-6">
-<a class="hover:text-white transition-colors" href="#projects">Projects</a>
-<a class="hover:text-white transition-colors" href="#tools">Tools</a>
-<a class="hover:text-white transition-colors" href="#contact">Contact</a>
-<a class="hover:text-white transition-colors inline-flex items-center gap-1 font-semibold" href="#top">
-          Back to Top ↑
-        </a>
-</div>
-</div>
-</footer>
-<!-- END: SiteFooter -->
-<!-- BEGIN: InteractionScripts -->
-<script data-purpose="contact-form-handler">
-    document.addEventListener('DOMContentLoaded', () => {
-      const contactForm = document.getElementById('contactForm');
-      const formSuccess = document.getElementById('formSuccess');
+    </a>
+    <nav aria-label="Main Navigation" class="flex items-center gap-8 md:gap-10">
+      <a class="text-sm font-medium text-[#2c4d5d] hover:text-[#1c5270] transition-colors focus:outline-none focus:underline" href="#projects">Projects</a>
+      <a class="text-sm font-medium text-[#2c4d5d] hover:text-[#1c5270] transition-colors focus:outline-none focus:underline" href="#tools">Tools</a>
+      <a class="text-sm font-medium text-[#2c4d5d] hover:text-[#1c5270] transition-colors focus:outline-none focus:underline" href="#contact">Contact</a>
+      <a class="inline-flex items-center justify-center px-6 py-2 text-xs font-semibold uppercase tracking-wider text-[#2a5768] border border-[#3a6f81] rounded-full hover:bg-[#3a6f81] hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand-darkteal focus:ring-offset-1" href="#contact">
+        GET IN TOUCH
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="flex-grow">
+  <!-- Hero Section -->
+  <section aria-labelledby="hero-title" class="bg-[#f4ede4] pt-12 pb-24 md:pt-20 md:pb-32" data-purpose="hero-presentation">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+      <div class="max-w-3xl space-y-6">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#336579] tracking-tight font-display" id="hero-title">
+          ERIC JOHN PEÑA
+        </h1>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#356679]">
+          Full Stack Web Developer
+        </h2>
+        <p class="text-base sm:text-lg text-[#3d6475] leading-relaxed max-w-2xl font-normal pt-2">
+          I'm a Computer Science graduate with an interest in software development, and web technologies. I enjoy building practical applications and continuously learning new technologies to expand my skills.
+        </p>
+        <div class="pt-6 flex flex-wrap gap-4 items-center" data-purpose="hero-actions">
+          <a class="px-7 py-3 bg-[#3a6f81] hover:bg-[#234a58] text-white text-sm font-semibold rounded-md shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3a6f81]" href="#projects">
+            Explore Projects
+          </a>
+          <!-- ADDED: rel="noopener noreferrer" for security/performance best practices -->
+          <a class="px-7 py-3 bg-transparent border border-[#3a6f81] hover:bg-[#3a6f81]/10 text-[#2a5768] text-sm font-semibold rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3a6f81]" href="./Eric John Peña.pdf" target="_blank" rel="noopener noreferrer">
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section aria-labelledby="projects-section-title" class="bg-[#d2e2e2] py-20 lg:py-28" data-purpose="projects-grid" id="projects">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+      <div class="flex justify-center mb-16">
+        <!-- CHANGED: span to h2 for proper document outline/hierarchy -->
+        <h2 class="inline-block px-8 py-1.5 bg-[#a3c7cf] text-[#1c4e61] text-xs font-bold tracking-widest uppercase rounded-full shadow-sm" id="projects-section-title">
+          PROJECTS
+        </h2>
+      </div>
       
-      if (contactForm && formSuccess) {
-        contactForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-          formSuccess.classList.remove('hidden');
-          contactForm.reset();
-          
-          setTimeout(() => {
-            formSuccess.classList.add('hidden');
-          }, 6000);
-        });
-      }
-    });
-  </script>
-<!-- END: InteractionScripts -->
-</body></html>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+          <div class="h-48 w-full bg-[#fdeecb] relative overflow-hidden flex items-center justify-center p-4">
+            <div class="w-full h-full flex flex-col items-center justify-center relative">
+              <div class="w-36 h-24 bg-white rounded-md border-2 border-slate-300 shadow-sm relative p-2 flex flex-col">
+                <div class="h-5 bg-amber-400 rounded-t-sm flex items-center px-2 space-x-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-yellow-200"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+                </div>
+                <div class="flex-1 flex items-center justify-around py-1">
+                  <!-- ADDED: aria-hidden="true" to all icons -->
+                  <i class="fa-solid fa-store text-emerald-600 text-2xl" aria-hidden="true"></i>
+                  <div class="space-y-1">
+                    <div class="w-12 h-2 bg-slate-200 rounded"></div>
+                    <div class="w-8 h-2 bg-slate-200 rounded"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute -bottom-2 -left-2 bg-rose-500 text-white rounded p-1 text-[10px] font-bold shadow">REST API</div>
+              <div class="absolute top-2 right-4 bg-orange-400 text-white text-[10px] px-2 py-0.5 rounded font-mono font-bold">200 OK</div>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-base font-bold text-[#234a58]">E-Commerce API Documentation</h3>
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">API Docs</span>
+              </div>
+              <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. 
+              </p>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+              <span>REST API • Postman</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+          <div class="h-48 w-full bg-[#e8f1f5] relative overflow-hidden flex items-center justify-center p-4">
+            <div class="w-full h-full flex items-center justify-center relative">
+              <div class="w-40 h-28 bg-white rounded-lg shadow-sm border border-slate-200 p-3 flex flex-col justify-between">
+                <div class="flex items-center justify-between border-b pb-1">
+                  <span class="text-[11px] font-bold text-slate-700">Student Portal</span>
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                </div>
+                <div class="space-y-1.5 py-1">
+                  <div class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-graduation-cap text-sky-600 text-xs" aria-hidden="true"></i>
+                    <div class="h-2 w-20 bg-slate-200 rounded"></div>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-calendar-check text-indigo-500 text-xs" aria-hidden="true"></i>
+                    <div class="h-2 w-16 bg-slate-200 rounded"></div>
+                  </div>
+                </div>
+                <div class="h-4 bg-sky-100 rounded text-[9px] text-sky-700 flex items-center justify-center font-semibold">
+                  GET /api/courses
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-base font-bold text-[#234a58]">Course Booking API Documentation</h3>
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">API Docs</span>
+              </div>
+              <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details.
+              </p>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+              <span>REST API • Postman</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card bg-white rounded-xl overflow-hidden shadow-sm flex flex-col border border-[#b8d1d8]/50" data-purpose="project-item">
+          <div class="h-48 w-full bg-[#dbeaf0] relative overflow-hidden flex items-center justify-center p-4">
+            <div class="flex items-center gap-3">
+              <div class="w-24 h-36 bg-slate-800 rounded-xl p-1.5 border-2 border-slate-700 shadow-md flex flex-col">
+                <div class="w-8 h-1 bg-slate-600 rounded-full mx-auto mb-1"></div>
+                <div class="bg-sky-500 flex-1 rounded p-1 flex flex-col justify-between">
+                  <span class="text-[8px] text-white font-bold">Active Courses</span>
+                  <div class="space-y-1">
+                    <div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Web Dev 101</div>
+                    <div class="bg-white/80 h-3 rounded text-[7px] text-sky-900 px-1 font-semibold flex items-center">Node.js API</div>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
+                  <i class="fa-solid fa-user-graduate text-sky-600" aria-hidden="true"></i> Profile System
+                </div>
+                <div class="px-2 py-1 bg-white rounded shadow text-[10px] font-bold text-slate-700 flex items-center gap-1">
+                  <i class="fa-solid fa-circle-check text-emerald-500" aria-hidden="true"></i> One-click Enroll
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h3 class="text-base font-bold text-[#234a58]">Course Booking App</h3>
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#bad5de] text-[#113a4a] shrink-0">Full Stack</span>
+              </div>
+              <p class="text-xs text-[#3d6475] leading-relaxed line-clamp-5">
+                A MERN-stack course enrollment system featuring user registration, authentication, and profile management.
+              </p>
+            </div>
+            <div class="pt-5 mt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#3d6475] font-medium">
+              <span>MERN Stack</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[#5e8b9e]" aria-hidden="true"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section aria-labelledby="tools-section-title" class="bg-[#f4eee6] py-20 lg:py-24" data-purpose="tools-tech-stack" id="tools">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+      <div class="flex justify-center mb-16">
+        <!-- CHANGED: span to h2 -->
+        <h2 class="inline-block px-8 py-1.5 bg-[#bdd7dc] text-[#1c4e61] text-xs font-bold tracking-widest uppercase rounded-full shadow-sm" id="tools-section-title">
+          TOOLS
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-12 gap-x-8 max-w-4xl mx-auto">
+        <!-- Tool: Figma -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-figma text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">Figma</span>
+        </div>
+        <!-- Tool: Bootstrap -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-bootstrap text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">Bootstrap</span>
+        </div>
+        <!-- Tool: HTML -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-html5 text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">HTML</span>
+        </div>
+        <!-- Tool: CSS -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-css3-alt text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">CSS</span>
+        </div>
+        <!-- Tool: Java -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-java text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">Java</span>
+        </div>
+        <!-- Tool: Node.js -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-node-js text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">Node.js</span>
+        </div>
+        <!-- Tool: Python -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-python text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">Python</span>
+        </div>
+        <!-- Tool: Git -->
+        <div class="flex flex-col items-center group cursor-default" data-purpose="tool-item">
+          <div class="w-16 h-16 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] transition-all duration-300 group-hover:scale-110 group-hover:bg-[#a6cbcf] shadow-sm">
+            <i class="fa-brands fa-git-alt text-2xl" aria-hidden="true"></i>
+          </div>
+          <span class="mt-3 text-xs font-medium text-[#2d5261]">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section aria-labelledby="contact-section-title" class="border-t border-[#d8e5e7]" data-purpose="contact-and-inquiry" id="contact">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <!-- Left Side -->
+      <div class="bg-[#f5ede4] py-16 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 flex flex-col justify-center">
+        <div class="max-w-xl mx-auto w-full">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#2b5869] mb-2" id="contact-section-title">
+            Send a Message
+          </h2>
+          <p class="text-xs sm:text-sm text-[#486b7a] mb-8">
+            Have an idea or project? Let's talk about building something great.
+          </p>
+          <form class="space-y-6" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.reset();">
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-[#355766] mb-2" for="userName">
+                YOUR NAME
+              </label>
+              <input class="w-full px-4 py-3 bg-[#b9d5d8]/70 border-0 rounded text-slate-800 placeholder-[#5e8b9e] focus:ring-2 focus:ring-[#3a6f81] focus:bg-[#b9d5d8] text-sm" id="userName" name="name" placeholder="Jane Doe" required="" type="text"/>
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-[#355766] mb-2" for="userEmail">
+                EMAIL ADDRESS
+              </label>
+              <input class="w-full px-4 py-3 bg-[#b9d5d8]/70 border-0 rounded text-slate-800 placeholder-[#5e8b9e] focus:ring-2 focus:ring-[#3a6f81] focus:bg-[#b9d5d8] text-sm" id="userEmail" name="email" placeholder="jane@example.com" required="" type="email"/>
+            </div>
+            <div>
+              <label class="block text-[11px] font-bold uppercase tracking-wider text-[#355766] mb-2" for="projectDetails">
+                PROJECT DETAILS
+              </label>
+              <textarea class="w-full px-4 py-3 bg-[#b9d5d8]/70 border-0 rounded text-slate-800 placeholder-[#5e8b9e] focus:ring-2 focus:ring-[#3a6f81] focus:bg-[#b9d5d8] text-sm resize-none" id="projectDetails" name="details" placeholder="Tell me about your goals, timelines, and scope..." required="" rows="4"></textarea>
+            </div>
+            <div>
+              <button class="px-8 py-3 bg-[#3a6f81] hover:bg-[#234a58] text-white text-xs font-bold uppercase tracking-wider rounded transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3a6f81]" type="submit">
+                SEND MESSAGE
+              </button>
+            </div>
+            <div class="hidden p-4 rounded bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs" id="formSuccess" aria-live="polite">
+              Thank you! Your message has been received. I'll get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Right Side -->
+      <div class="bg-[#c2dada] py-16 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 flex flex-col justify-center">
+        <div class="max-w-xl mx-auto w-full space-y-6">
+          <div>
+            <!-- Changed to heading levels for structure -->
+            <h3 class="text-[11px] font-bold uppercase tracking-widest text-[#2c4d5d]">CONTACT</h3>
+            <h4 class="text-2xl sm:text-3xl font-bold text-[#234a58] mt-1">Get in Touch</h4>
+            <p class="text-xs sm:text-sm text-[#355766] mt-2">
+              Available for freelance contracts, design leadership, and full-time inquiries.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <a class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm hover:shadow transition-shadow group" href="mailto:eric.john.pena@gmail.com">
+              <div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-envelope text-sm" aria-hidden="true"></i>
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-[9px] uppercase tracking-wider text-[#547b8c] font-bold block">EMAIL</span>
+                <span class="text-xs font-bold text-[#234a58] truncate block">eric.john.pena@gmail.com</span>
+              </div>
+            </a>
+            <div class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm">
+              <div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58]">
+                <i class="fa-solid fa-location-dot text-sm" aria-hidden="true"></i>
+              </div>
+              <div>
+                <span class="text-[9px] uppercase tracking-wider text-[#547b8c] font-bold block">LOCATION</span>
+                <span class="text-xs font-bold text-[#234a58] block">Cavite, Philippines</span>
+              </div>
+            </div>
+            <!-- Added rel="noopener noreferrer" -->
+            <a class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm hover:shadow transition-shadow group" href="https://github.com/EricJohnPena" rel="noopener noreferrer" target="_blank">
+              <div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] group-hover:scale-105 transition-transform">
+                <i class="fa-brands fa-github text-base" aria-hidden="true"></i>
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-[9px] uppercase tracking-wider text-[#547b8c] font-bold block">GITHUB</span>
+                <span class="text-xs font-bold text-[#234a58] truncate block">github.com/EricJohnPena</span>
+              </div>
+            </a>
+            <!-- Added rel="noopener noreferrer" -->
+            <a class="bg-[#f7f5ef] p-4 rounded-xl flex items-center gap-3.5 shadow-sm hover:shadow transition-shadow group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+              <div class="w-10 h-10 rounded-full bg-[#bad7dc] flex items-center justify-center text-[#234a58] group-hover:scale-105 transition-transform">
+                <i class="fa-brands fa-linkedin-in text-sm" aria-hidden="true"></i>
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-[9px] uppercase tracking-wider text-[#547b8c] font-bold block">NETWORK</span>
+                <span class="text-xs font-bold text-[#234a58] truncate block">linkedin.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#3a6f81] text-white py-6" data-purpose="site-footer">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-white/90">
+    <div>
+      © 2026 Eric John Peña. All rights reserved.
+    </div>
+    <div class="flex items-center gap-6">
+      <a class="hover:text-white transition-colors" href="#projects">Projects</a>
+      <a class="hover:text-white transition-colors" href="#tools">Tools</a>
+      <a class="hover:text-white transition-colors" href="#contact">Contact</a>
+      <a class="hover:text-white transition-colors inline-flex items-center gap-1 font-semibold" href="#top">
+        Back to Top ↑
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script data-purpose="contact-form-handler">
+  document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    
+    if (contactForm && formSuccess) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        formSuccess.classList.remove('hidden');
+        contactForm.reset();
+        
+        setTimeout(() => {
+          formSuccess.classList.add('hidden');
+        }, 6000);
+      });
+    }
+  });
+</script>
+</body>
+</html>
